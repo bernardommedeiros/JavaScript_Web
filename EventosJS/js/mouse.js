@@ -16,7 +16,7 @@ function retornoRed(){
 
 // Exemplo -> onmousemove
 
-function adicionatexto(){
+function adicionaTexto(){
     let p = document.getElementById("mouse2");
-    p.append("olá");
+    p.append("olá! ");
 }

@@ -7,6 +7,7 @@
     <style>
         body{
             text-align: center;
+            size: 100%;
         }
 
         #mouse1{
@@ -15,14 +16,40 @@
             height: 100px;
             background-color: red;
             cursor: pointer;
+            padding: 80px;
         }
+
+        #mouse3{
+            
+            width: 50%;
+            height: 60px;
+            background-color: blueviolet;
+            cursor: pointer;
+            padding: 80px;
+        }
+        #mouse4{
+            
+            width: 50%;
+            height: 60px;
+            background-color: cornflowerblue;
+            cursor: pointer;
+            padding: 80px;
+        }
+        
     </style>
 </head>
 <body>
+
     <p onmousemove="adicionaTexto()" id="mouse2"> </p>
-    <div id="mouse1"  onmouseout="retornoRed()" onmouseover="turnBlue()">
-        
-    </div>
+
+    <div id="mouse1" onmousemove="adicionaTexto()" onmouseout="retornoRed()" onmouseover="turnBlue()"></div>
+
+    <div id="mouse3" onmousedown="alert('clicou na div')"></div>
+
+    <div id="mouse4" onmouseup="alert('clicou na div e soltou')"></div>
+
+    <div id="mouse" onmouseup="alert('clicou na div e soltou')"></div>
+    
     <script src="../js/mouse.js"></script>
 </body>
 </html>
