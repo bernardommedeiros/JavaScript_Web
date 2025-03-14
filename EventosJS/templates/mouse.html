@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos pela ação do Mouse</title>
+    <style>
+        body{
+            text-align: center;
+        }
+
+        #mouse1{
+            
+            width: 100%;
+            height: 100px;
+            background-color: red;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <p onmousemove="adicionaTexto()" id="mouse2"> </p>
+    <div id="mouse1"  onmouseout="retornoRed()" onmouseover="turnBlue()">
+        
+    </div>
+    <script src="../js/mouse.js"></script>
+</body>
+</html>

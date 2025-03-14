@@ -1,13 +1,13 @@
 ## Eventos no JavaScript
-<p>ações disparadas pela <b>interação do usuário</b> na página. Tornando as páginas web interativas e dinâmicas.</p>
+<p>Ações disparadas pela <b>interação do usuário</b> na página. Tornando as páginas web interativas e dinâmicas.</p>
 
 ---
 
 ## Eventos mais utilizados
 
-- ```onclick```: disparada ao receber um click.
+- ```onclick```: dispara ao receber um click.
  
-- ```ondblclick```: disparada ao receber click duplo.
+- ```ondblclick```: dispara ao receber click duplo.
   
 - ```onmouseover```: dispara quando o mouse está sobre o elemento.
   
@@ -33,5 +33,5 @@
 
 - ```onload```: dispara ao finalizar o carregamento da página.
 
--  ```onresize```: dispara quando há o redimensionamento da tela.
+-  ```onresize```: dispara quando há o redimensionamento da janela.
  
