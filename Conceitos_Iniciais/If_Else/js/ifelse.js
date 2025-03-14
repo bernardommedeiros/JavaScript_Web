@@ -30,3 +30,4 @@ function verificaNome(){
         p.style.color = "green";
     }
 }
+
