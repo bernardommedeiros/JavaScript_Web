@@ -5,7 +5,7 @@
 
 ## Métodos de cronometragem
 
-- ```setTimeout(function, tempo em milissegundos)```: executa uma função, depois de atingir o número especificado de milissegundos.
+- ```setTimeout(function, tempo em milissegundos)```: executa a função apenas uma vez, depois de atingir o tempo determinado.
  
-- ```setInterval(function, milliseconds)```: mesma função do setTimeout(), mas repete a execução de forma contínua.
+- ```setInterval(function, milliseconds)```: mesma funcionalidade do setTimeout(), mas repete a execução de forma contínua.
   
