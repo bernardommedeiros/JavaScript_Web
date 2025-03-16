@@ -7,5 +7,5 @@
 
 - ```setTimeout(function, tempo em milissegundos)```: executa a função apenas uma vez, depois de atingir o tempo determinado.
  
-- ```setInterval(function, milliseconds)```: mesma funcionalidade do setTimeout(), mas repete a execução de forma contínua.
+- ```setInterval(function, milliseconds)```: repete a execução da função de forma contínua, até o contador ser atingido.
   

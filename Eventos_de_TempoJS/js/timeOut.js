@@ -1,5 +1,6 @@
 // Métodos de Tempo JavaScript
 
+//setTimeout
 function ativarContagem(){
     document.getElementById('tempo').innerHTML = "começou a contar!";
     //setTimeout(function, tempo em milissegundos)
@@ -16,3 +17,6 @@ function pausarContagem(){
     clearTimeout();
     document.getElementById('tempo').innerHTML = "pausou a contagem!";
 }
+
+// setInterval
+
