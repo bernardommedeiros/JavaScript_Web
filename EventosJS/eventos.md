@@ -1,4 +1,4 @@
-## Eventos no JavaScript
+# Eventos no JavaScript
 <p>Ações disparadas pela <b>interação do usuário</b> na página. Tornando as páginas web interativas e dinâmicas.</p>
 
 ---

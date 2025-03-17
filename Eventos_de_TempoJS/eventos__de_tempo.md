@@ -1,4 +1,4 @@
-## Eventos de tempo no JavaScript
+# Eventos de tempo no JavaScript
 <p>Determinam a execução dos códigos em intervalos de tempo pré-definidos.</p>
 
 ---
