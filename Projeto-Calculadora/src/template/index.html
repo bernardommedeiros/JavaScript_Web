@@ -1,14 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../static/main.css">
-    <title> Calculadora </title>
+    <title>Calculadora</title>
 </head>
 <body>
-    
+    <div id="container">
+        <!-- topo -->
+         
+        <input id="display">  </input>
 
+        <div onclick="clearDisplay()" class="item" id="ac"> a.c </div>
+
+        <div onclick="removeElement()" class="item" id="remover"> remover </div>
+        <div class="item" id="porcentagem"> % </div>
+
+        <!-- números -->
+        <button onclick="insertElement('7')" class="item" id="sete"> 7 </button>
+        <button onclick="insertElement('8')" class="item" id="oito"> 8 </button>
+        <button onclick="insertElement('9')" class="item" id="nove"> 9 </button>
+        <button onclick="insertElement('4')" class="item" id="quatro"> 4 </button>
+        <button onclick="insertElement('5')" class="item" id="cinco"> 5 </button>
+        <button onclick="insertElement('6')" class="item" id="seis"> 6 </button>
+        <button onclick="insertElement('1')" class="item" id="um"> 1 </button>
+        <button onclick="insertElement('2')" class="item" id="dois"> 2 </button>
+        <button onclick="insertElement('3')" class="item" id="tres"> 3 </button>
+
+        <button onclick="insertElement('.')" class="item" id="ponto"> . </button>
+        <button onclick="insertElement('0')" class="item" id="zero"> 0 </button>
+        <button onclick="insertElement(',')" class="item" id="virgula"> , </button>
+
+        <!-- sidebar -->
+        <button onclick="insertElement('/')" class="item" id="divisao"> / </button>
+        <button onclick="insertElement('X')" class="item" id="multiplicacao"> X </button>
+        <button onclick="insertElement('-')" class="item" id="subtracao"> - </button>
+        <button onclick="insertElement('+')" class="item" id="adicao"> + </button>
+
+
+        <button  class="item" id="gerarResultado"> = </button>
+    </div>
 
     <script src="../scripts/calculadora.js"></script>
 </body>

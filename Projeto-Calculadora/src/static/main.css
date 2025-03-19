@@ -1,0 +1,176 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    height: 100dvh;
+    background-color:lightblue;
+    font-size: 30px;
+    text-align: center;
+}
+
+#container {
+    
+    display: grid;
+    grid-template-areas:
+    'display display display display'
+    'ac remover porcentagem divisao'
+    'sete oito nove multiplicacao'
+    'quatro cinco seis subtracao'
+    'um dois tres adicao'
+    'ponto zero virgula geraResultado';
+    height: 90%;
+    width: 80%;
+    
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container > .item {
+    width: 100px; 
+    height: 100px; 
+    border-radius: 50%; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: white;
+  
+}
+
+#display {
+    grid-area: display;
+    background-color: black;
+    color: white;
+    height: 3em;
+    margin-bottom: 9px;
+}
+
+input.value {
+    padding: 30px;
+}
+
+#ac {
+    grid-area: ac;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#remover {
+    grid-area: remover;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#porcentagem {
+    grid-area: porcentagem;
+    background-color:#2A2A2C;
+    color: white;
+}
+
+#sete {
+    grid-area: sete;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#oito {
+    grid-area: oito;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#nove {
+    grid-area: nove;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#quatro {
+    grid-area: 4;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#cinco {
+    grid-area: cinco;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#seis {
+    grid-area: seis;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+
+#um {
+    grid-area: um;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#dois {
+    grid-area: dois;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#tres {
+    grid-area: tres;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#ponto{
+    grid-area: ponto;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#zero {
+    grid-area: zero;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#virgula {
+    grid-area: virgula;
+    background-color: #2A2A2C;
+    color: white;
+}
+
+#divisao {
+    grid-area: divisao;
+    background-color: #FF9F0A;
+    color: white;
+}
+
+#multiplicacao {
+    grid-area: multiplicacao;
+    background-color: #FF9F0A;
+    color: white;
+}
+
+#subtracao{
+    grid-area: subtracao;
+    background-color: #FF9F0A;
+    color: white;
+}
+
+#adicao {
+    grid-area: adicao;
+    background-color: #FF9F0A;
+    color: white;
+}
+
+#gerarResultado {
+    grid-area: geraResultado;
+    background-color: #FF9F0A;
+    color: white;
+}
