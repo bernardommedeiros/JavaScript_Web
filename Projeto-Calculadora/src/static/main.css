@@ -4,10 +4,14 @@
 }
 
 body{
-    height: 100dvh;
-    background-color:lightblue;
+    height: 100vh;
+    background-color:black;
     font-size: 30px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
 #container {
@@ -22,13 +26,9 @@ body{
     'ponto zero virgula geraResultado';
     height: 90%;
     width: 80%;
-    
-}
-
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-left: 50%;
+    margin-right: 50%;
+    gap: 1%;
 }
 
 #container > .item {
@@ -46,8 +46,10 @@ body{
     grid-area: display;
     background-color: black;
     color: white;
-    height: 3em;
-    margin-bottom: 9px;
+    height: 0.5em;
+    margin-bottom: 12px;
+    padding: 10%;
+    text-align: end;
 }
 
 input.value {
@@ -127,7 +129,7 @@ input.value {
     color: white;
 }
 
-#ponto{
+#ponto {
     grid-area: ponto;
     background-color: #2A2A2C;
     color: white;
@@ -137,6 +139,7 @@ input.value {
     grid-area: zero;
     background-color: #2A2A2C;
     color: white;
+    align-self: center;
 }
 
 #virgula {
@@ -173,4 +176,16 @@ input.value {
     grid-area: geraResultado;
     background-color: #FF9F0A;
     color: white;
+}
+
+label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
 }
