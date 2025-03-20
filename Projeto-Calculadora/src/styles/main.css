@@ -22,7 +22,7 @@ body{
     'sete oito nove multiplicacao'
     'quatro cinco seis subtracao'
     'um dois tres adicao'
-    'remover zero virgula geraResultado';
+    'remover zero ponto geraResultado';
     height: 90%;
     width: 80%;
     margin-left: 50%;
@@ -143,8 +143,8 @@ input.value {
     align-self: center;
 }
 
-#virgula {
-    grid-area: virgula;
+#ponto {
+    grid-area: ponto;
     background-color: #2A2A2C;
     color: white;
 }

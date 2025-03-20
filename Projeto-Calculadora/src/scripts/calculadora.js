@@ -22,27 +22,27 @@ function calc(){
 
 }
 
+// PORCENTAGEM
 function percentage() {
     
 }
 
+
+// TROCAR SINAL
 function not() {
-    function calc(){
-        const displayElements = document.getElementById('display').value;
-    
-        document.getElementById('display').value = eval(displayElements);
-    }
-
     const displayElements = document.getElementById('display').value;
+    
+    document.getElementById('display').value = eval(displayElements);
 
-    if (displayElements.startsWith("-")){
+    const calculatedElements = document.getElementById('display').value;
+
+    if (calculatedElements.startsWith("-")){
         document.getElementById('display').value = displayElements.slice(1);
     } 
-    else if (displayElements.startsWith("1") || displayElements.startsWith("2") || displayElements.startsWith("3") || displayElements.startsWith("4") || displayElements.startsWith("5") || displayElements.startsWith("6") || displayElements.startsWith("7") || displayElements.startsWith("8") || displayElements.startsWith("9")){
-        document.getElementById('display').value = "-" + displayElements;
+    else if (calculatedElements.startsWith("1") || calculatedElements.startsWith("2") || calculatedElements.startsWith("3") || calculatedElements.startsWith("4") || calculatedElements.startsWith("5") || calculatedElements.startsWith("6") || calculatedElements.startsWith("7") || calculatedElements.startsWith("8") || calculatedElements.startsWith("9")){
+        document.getElementById('display').value = "-" + calculatedElements;
     }
 
 }
-
 
 
