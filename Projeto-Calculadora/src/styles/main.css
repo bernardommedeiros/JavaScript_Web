@@ -19,11 +19,11 @@ body{
     display: grid;
     grid-template-areas:
     'display display display display'
-    'ac remover porcentagem divisao'
+    'ac maismenos porcentagem divisao'
     'sete oito nove multiplicacao'
     'quatro cinco seis subtracao'
     'um dois tres adicao'
-    'ponto zero virgula geraResultado';
+    'remover zero virgula geraResultado';
     height: 90%;
     width: 80%;
     margin-left: 50%;
@@ -62,8 +62,8 @@ input.value {
     color: white;
 }
 
-#remover {
-    grid-area: remover;
+#maismenos {
+    grid-area: maismenos;
     background-color: #2A2A2C;
     color: white;
 }
@@ -129,8 +129,8 @@ input.value {
     color: white;
 }
 
-#ponto {
-    grid-area: ponto;
+#remover {
+    grid-area: remover;
     background-color: #2A2A2C;
     color: white;
 }
