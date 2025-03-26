@@ -1,17 +1,25 @@
-// INSERÇÂO NO DISPLAY
-
-// TRANSFORMAR DISPLAY EM ARRAY PARA VERIFICAR SE NAO VAO COLOCAR DOIS SINAIS SEGUIDOS E SINAL DE PORCENTAGEM
-
 
 function insertElement(element) {
-    // Verifica se o display está vazio e se o elemento é um número
-    if (document.getElementById('display').value === '' && (element == 0 || element == 1 || element == 2 || element == 3 || element == 4 || element == 5 || element == 6 || element == 7 || element == 8 || element == 9)) {
-        document.getElementById('display').value += element;
+    const display = document.getElementById('display');
+    const currentValue = display.value;
+
+    if (currentValue === '' && (element == 0 || element == 1 || element == 2 || element == 3 || element == 4 || element == 5 || element == 6 || element == 7 || element == 8 || element == 9)) {
+        display.value += element;
     }
-    else if (document.getElementById('display').value != ''){
-        document.getElementById('display').value += element
+    else if (currentValue !== '') {
+
+        const operators = ['+', '-', '*', '/', '%'];
+        const lastElement = currentValue.charAt(currentValue.length - 1);
+
+        if (operators.includes(lastElement) && operators.includes(element)) {
+            return;
+        } else {
+          
+            display.value += element;
+        }
     }
 }
+
 
 
 
@@ -36,8 +44,23 @@ function calc(){
 
 // PORCENTAGEM
 function percentage() {
-    
+    const display = document.getElementById('display');
+    const currentValue = display.value;
+
+    const percentageIndex = currentValue.indexOf('%');
+   
+       
+    const beforePercentage = currentValue.substring(0, percentageIndex);
+    const afterPercentage = currentValue.substring(percentageIndex + 1);
+
+    if (beforePercentage && afterPercentage) {
+        const baseValue = parseFloat(beforePercentage);
+        const percentageValue = parseFloat(afterPercentage);
+
+        display.value = (baseValue * percentageValue) / 100;
+    } 
 }
+
 
 
 // TROCAR SINAL
