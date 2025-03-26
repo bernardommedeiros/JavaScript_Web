@@ -1,7 +1,19 @@
 // INSERÇÂO NO DISPLAY
-function insertElement(element){
-    document.getElementById('display').value += element;
+
+// TRANSFORMAR DISPLAY EM ARRAY PARA VERIFICAR SE NAO VAO COLOCAR DOIS SINAIS SEGUIDOS E SINAL DE PORCENTAGEM
+
+
+function insertElement(element) {
+    // Verifica se o display está vazio e se o elemento é um número
+    if (document.getElementById('display').value === '' && (element == 0 || element == 1 || element == 2 || element == 3 || element == 4 || element == 5 || element == 6 || element == 7 || element == 8 || element == 9)) {
+        document.getElementById('display').value += element;
+    }
+    else if (document.getElementById('display').value != ''){
+        document.getElementById('display').value += element
+    }
 }
+
+
 
 // REMOVE
 function removeElement(){
