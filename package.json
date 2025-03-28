@@ -2,6 +2,26 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
-    "tailwindcss": "^3.4.10"
-  }
+    "tailwindcss": "^3.4.17"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.0.17"
+  },
+  "name": "javascript",
+  "version": "1.0.0",
+  "description": "first tailwind project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bernardommedeiros/JavaScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bernardommedeiros/JavaScript/issues"
+  },
+  "homepage": "https://github.com/bernardommedeiros/JavaScript#readme"
 }
