@@ -25,10 +25,5 @@ Desenvolvimento de projetos simples para fixação das peculiaridades da linguag
     
 <br>
 
-- LinkTree
-  - Landing Page com os meus links, com as funcionalidades de baixar PDF e gerar link.
- 
-<br>
-
 - Gerenciador de tarefas
   - Site de gerenciamento de atividades diárias, sendo possível criar uma atividade, marcá-la como concluída, excluí-la e editá-la.
