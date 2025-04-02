@@ -10,7 +10,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-   
 }
 
 #container {
@@ -51,6 +50,7 @@ body{
     padding: 8%;
     text-align: end;
     font-size: 2em;
+   
 }
 
 input.value {

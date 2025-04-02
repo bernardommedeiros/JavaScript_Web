@@ -4,54 +4,108 @@
 }
 
 body{
-    background-color: #1c1936;
+    background-color: #000000;
     font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-
-main{
-    
+   
 }
 
 header{
     margin-top: 1rem;
-    background-color: cornflowerblue;
+    background-color: rgb(29, 24, 24);
     text-align: center;
-    padding-left: 5rem;
-    padding-right: 5rem;
-    padding-bottom: 4rem;
-    border-radius: 1.5em;
-    margin: 1.5em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
+    border-radius: 1em;
+    margin: auto auto;  
+    width: 35%;
+    margin-top: 1em;
     
+    display: flex;
+    
+   
+    align-items: center;
 }
 
 h1{
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 2em;
     font-size: 2.5rem;
     color: white;
 }
+
+
 
 input{
     width: 60%;
     height: 4em;
     border-radius: 1em;
     border: 2px solid gray;
-    padding-left: 1em;
+    padding-left: 0.5em;
     margin-right: 0.5em;
     font-size: 0.9rem;
+    margin-bottom: 1em;
 }
 
 button{
-    width: 25%;
-    height: 4em;
+    width: 21%;
+    height: 4.4em;
     border-radius: 1em;
     border: none;
-    background-color: rgb(2, 98, 39);
+    background-color: rgb(255, 132, 0);
     color: white;
     font-weight: bold;
+}
+
+
+main {
+    display: flex;                  
+    flex-direction: row;             
+    align-items: center;
+    background-color: #f0f4f8;   
+    border-radius: 1.5em;            
+    padding: 1.5rem;                
+    width: 33%;                     
+    margin: 2rem auto;       
+}
+
+
+main > div {
+    display: flex;
+
+
+}
+
+
+#botao_concluir img,
+#botao_editar img,
+#botao_excluir img {
+    cursor: pointer;           
+    transition: transform 0.3s; 
+}
+
+#botao_concluir img:hover,
+#botao_editar img:hover,
+#botao_excluir img:hover{
+    transform: scale(1.1);
+}
+
+
+
+#botao_concluir {
+    flex: 10%;
+}
+
+#tarefa {
+    font-size: 1.3rem;   
+    flex: 74%;  
+}
+
+#botao_editar {  
+    flex: 8%;  
+}
+
+#botao_excluir {  
+    flex: 8%;  
 }
 
