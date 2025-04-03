@@ -80,4 +80,11 @@ function not() {
 
 }
 
-
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        const element = document.getElementById('add');
+        if (element) {
+            element.click(); 
+        }
+    }
+})

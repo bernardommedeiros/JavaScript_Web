@@ -36,25 +36,12 @@ function deleteContent(i){
     content.remove();
 }
 
-function finished(i){
-    let content = document.getElementById(i);
-    let newReminder = {
-        ` <div class="clicado">
-        
-        <div class="botao_concluir">
-            <img src="../components/circle-check-big (2).svg" alt="">
-        </div>
-        <div class="tarefa">
-            <p> ${inputContent} </p>
-        </div>
-        <div class="botao_editar" id="hidden">
-            <img src="../components/edit.svg" alt="">
-        </div>
-        <div class="botao_excluir">
-            <img src="../components/trash.svg" alt="">
-        </div>
-    
-    </div>`
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        const element = document.getElementById('add');
+        if (element) {
+            element.click(); 
+        }
     }
-}
+});
 
