@@ -17,15 +17,14 @@ header{
     padding-right: 2rem;
     padding-bottom: 2rem;
     border-radius: 1em;
-    margin: auto auto;  
-    width: 35%;
-    margin-top: 1em;
-    
-    display: flex;
-    
-   
-    align-items: center;
+    margin-right: auto;  
+    margin-left: auto;
+    width: 55%;
+    margin-top: 2rem;
+    margin-bottom: 1.8rem;
 }
+
+
 
 h1{
     padding-top: 1em;
@@ -58,54 +57,71 @@ button{
 }
 
 
-main {
+#inicial {
     display: flex;                  
     flex-direction: row;             
     align-items: center;
     background-color: #f0f4f8;   
     border-radius: 1.5em;            
     padding: 1.5rem;                
-    width: 33%;                     
-    margin: 2rem auto;       
+    width: 53%;                     
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;    
+   
 }
 
-
-main > div {
-    display: flex;
-
-
+#clicado {
+    display: flex;                  
+    flex-direction: row;             
+    align-items: center;
+    background-color: #aaffb3;   
+    border-radius: 1.5em;            
+    padding: 1.5rem;                
+    width: 53%;                     
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1.2rem;
+    margin-bottom: 0.8rem;  
+    color: rgb(165, 165, 165);  
+    text-decoration: line-through;
+   
 }
 
-
-#botao_concluir img,
-#botao_editar img,
-#botao_excluir img {
+.botao_concluir img,
+.botao_editar img,
+.botao_excluir img {
     cursor: pointer;           
     transition: transform 0.3s; 
 }
 
-#botao_concluir img:hover,
-#botao_editar img:hover,
-#botao_excluir img:hover{
+.botao_concluir img:hover,
+.botao_editar img:hover,
+.botao_excluir img:hover{
     transform: scale(1.1);
 }
 
 
 
-#botao_concluir {
+.botao_concluir {
     flex: 10%;
 }
 
-#tarefa {
+.tarefa {
     font-size: 1.3rem;   
     flex: 74%;  
 }
 
-#botao_editar {  
+.botao_editar {  
     flex: 8%;  
 }
 
-#botao_excluir {  
+.botao_excluir {  
     flex: 8%;  
+}
+
+#hidden {
+    visibility: hidden;
 }
 
