@@ -8,15 +8,15 @@ function addReminder(){
 
     if(inputContent !== '' && inputContent !== null && inputContent !== undefined){
         ++i;
-        let newReminder = `<div id="${i}" class="inicial">
+        let newReminder = `<div id="${i}" class="inicial" class="clicado">
         
-                <div onclick="finished(${i})" class="botao_concluir">
-                    <img src="../components/circle.svg" alt="">
+                <div ondblclick="restore(${i})" onclick="finished(${i})" class="botao_concluir">
+                    <img id="icone_${i}" src="../components/circle.svg" alt="">
                 </div>
-                <div class="tarefa">
+                <div ondblclick="restore(${i})" onclick="finished(${i})" class="tarefa">
                     <p> ${inputContent} </p>
                 </div>
-                <div class="botao_editar">
+                <div onclick="editContent(${i})" id="editContent" class="botao_editar">
                     <img src="../components/edit.svg" alt="">
                 </div>
                 <div onclick="deleteContent(${i})" class="botao_excluir">
@@ -44,4 +44,32 @@ document.addEventListener('keydown', function(event) {
         }
     }
 });
+
+function finished(i) {
+    let content = document.getElementById(i);
+    let className = content.getAttribute('class');
+
+    if (className === "inicial") {
+        content.classList.add('clicado');
+
+        let icon = document.getElementById("icone_" + i);
+        icon.src = "../components/circle_check.svg";
+
+    }
+}
+
+function restore(i) {
+    let content = document.getElementById(i);
+
+    if (content.classList.contains('clicado')) {
+
+        content.classList.remove('clicado');
+        content.classList.add('inicial');
+
+        let icon = document.getElementById("icone_" + i);
+        icon.src = "../components/circle.svg";
+
+    }
+}
+
 
