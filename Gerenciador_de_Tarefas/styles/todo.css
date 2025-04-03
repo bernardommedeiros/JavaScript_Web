@@ -44,6 +44,7 @@ input{
     margin-right: 0.5em;
     font-size: 0.9rem;
     margin-bottom: 1em;
+
 }
 
 button{
@@ -57,7 +58,7 @@ button{
 }
 
 
-#inicial {
+.inicial {
     display: flex;                  
     flex-direction: row;             
     align-items: center;
@@ -72,7 +73,7 @@ button{
    
 }
 
-#clicado {
+.clicado {
     display: flex;                  
     flex-direction: row;             
     align-items: center;
@@ -100,9 +101,12 @@ button{
 .botao_editar img:hover,
 .botao_excluir img:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-
+#add{
+    cursor: pointer;
+}
 
 .botao_concluir {
     flex: 10%;
