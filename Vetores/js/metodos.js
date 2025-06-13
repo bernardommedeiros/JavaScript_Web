@@ -109,4 +109,3 @@ function filtragem(numeros){
 }
 
 document.getElementById("teste17").innerHTML = "Maiores que 9: " + maior9;
-
