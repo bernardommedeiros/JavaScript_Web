@@ -1,4 +1,4 @@
-// Filtragem
+// Filtragem -> não altera o array original, pode retornar um maior, menor ou do mesmo tamanho
 
 const numbers = [5, 50, 40, 9, 8, 70, 76, 51, 11, 22];
 
